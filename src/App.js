@@ -12,16 +12,10 @@ const App = () => {
     return (
         <AppProvider>
             <div className='container'>
+
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
-                <div class="col-4">
-                    <select style>
-                        <option>$ Dollar</option>
-                        <option>£ Pound</option>
-                        <option>€ Euro</option>
-                        <option>₹ Ruppee</option>
-                    </select>
-                </div>
-                <div className='row mt-3'>
+
+                <div className='row mt-4'>
                     <div className='col-sm'>
                         <Budget />
                     </div>
@@ -31,9 +25,8 @@ const App = () => {
                     <div className='col-sm'>
                         <ExpenseTotal />
                     </div>
+                   
                 </div>
-                
-
                 <h3 className='mt-3'>Allocation</h3>
                 <div className='row '>
                     <div className='col-sm'>
@@ -43,7 +36,7 @@ const App = () => {
                 <h3 className='mt-3'>Change allocation</h3>
                 <div className='row mt-3'>
                     <div className='col-sm'>
-                        <AllocationForm/>
+                        <AllocationForm />
                     </div>
                 </div>
             </div>

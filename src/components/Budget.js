@@ -21,9 +21,8 @@ const Budget = () => {
                     type='number'
                     id='budget'
                     value={budget}
-                    step="10"
                     max="20000"
-                    style={{ marginLeft: '2rem', size: 10 }}
+                    style={{ marginLeft: '5px', size: 10 }}
                     onChange={(event) => editBudget(event.target.value)}>
                 </input>
 
