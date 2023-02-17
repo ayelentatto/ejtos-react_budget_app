@@ -4,10 +4,10 @@ import { AppContext } from '../context/AppContext';
 const Budget = () => {
     const { budget, dispatch } = useContext(AppContext);
     const editBudget = (newBudget) => {
-if(newBudget>20000){
-    alert("inadequate budget");
-   
-}
+        if (newBudget > 20000) {
+            alert("inadequate budget");
+
+        }
         dispatch({
             payload: parseInt(newBudget),
             type: "SET_BUDGET"
